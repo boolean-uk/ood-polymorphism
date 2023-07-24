@@ -1,12 +1,12 @@
-class Object {
+class Assertion {
     constructor(val1, val2) {
     this.val1 = val1
     this.val2 = val2
   }
 
-  checkEqual() {
+  check() {
     return this.val1 === this.val2
   }
 }
 
-module.exports = Object
+module.exports = Assertion
