@@ -7,13 +7,7 @@ class AssertionList {
   }
 
   checkAll() {
-    return this.assertions.every(assertion => {
-      if (assertion instanceof Equal) {
-        return assertion.checkEqual()
-      } else if (assertion instanceof Include) {
-        return assertion.checkInclude()
-      }
-    })
+    return this.assertions.every((assertion) => assertion.check())
   }
 }
 
