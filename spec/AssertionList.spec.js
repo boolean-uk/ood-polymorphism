@@ -1,6 +1,7 @@
 const AssertionList = require("../src/AssertionList.js")
 const Equal = require("../src/Equal.js")
 const Include = require("../src/Include.js")
+const Assertion = require("../src/Assertion.js")
 
 describe("AssertionList", () => {
   describe("#check()", () => {
